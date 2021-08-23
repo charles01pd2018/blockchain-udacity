@@ -1,2 +1,1 @@
-# blockchain-udacity
- Blockchain Udacity Course
+# Blockchain Udacity Course
