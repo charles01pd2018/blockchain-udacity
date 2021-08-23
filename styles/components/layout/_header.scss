@@ -1,0 +1,67 @@
+.blog-edit-header-container {
+    padding: 2rem;
+
+    border: 3px solid orange;
+
+    .blog-edit-header-wrapper {
+        display: flex;
+        justify-content: flex-end;
+
+        .account-wrapper {
+            .account-button-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.3rem;
+    
+                border: 2px solid $purple-2;
+    
+                .account-name {
+                    margin-right: 0.5rem;
+                }
+    
+                .account-image {
+                    border-radius: 50px;
+                    // makes the image a "true" circle
+                    transform: translate(0, 0);
+                }
+            }
+        }
+    }
+}
+
+.header-dropdown-container {
+    // required for popup to not take space in the document flow
+    position: relative;
+
+    .header-dropdown-wrapper {
+        position: absolute;
+        right: 0.5rem;
+        background-color: white;
+        border-radius: 8px;
+        border: 3px solid $green-2;
+    
+        .header-dropdown-link-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .header-dropdown-link {
+                display: flex;
+                align-items: center;
+                padding: 1rem 0.75rem;
+                z-index: 9999;
+            }
+
+            .header-dropdown-link-text {
+                padding-left: 0.3rem;
+                // white-space: nowrap;
+            }
+        }
+    }
+
+    @media ( max-width: $breakpoint--medium ) {
+        .header-dropdown-wrapper {
+            right: 0.25rem;
+        }
+    }
+}

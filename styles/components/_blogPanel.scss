@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+$blog-panel--preview-line-height:           1.6rem;
+$blog-panel--preview-font-size:             1.03rem;
+$blog-panel--preivew-max-lines:             3;
+
+
+/*--------------------------------------------------------------
+# Styling
+--------------------------------------------------------------*/
+.blog-panel-container {
+    .blog-panel-wrapper {
+        border-bottom: 2px solid black;
+
+        .blog-panel-title {
+            width: max-content;
+        }
+
+        .blog-panel-preview {
+            .blog-panel-preview-text {
+                display: -webkit-box;
+                -webkit-line-clamp: $blog-panel--preivew-max-lines;
+                -webkit-box-orient: vertical; 
+                font-size: $blog-panel--preview-font-size;
+                line-height: $blog-panel--preview-line-height;
+                overflow: hidden;
+            }
+        }
+    }
+}
